@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vetrina Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1a1f2b, #0e1118);
+    }
+    .link-card {
+      transition: all 0.25s ease-in-out;
+    }
+    .link-card:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem;
+      }
+      .container {
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+      }
+      .link-card {
+        flex-direction: row;
+        padding: 0.75rem 1rem;
+      }
+      .link-card img {
+        width: 2rem;
+        height: 2rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex items-center justify-center px-4 font-sans">
+  <div class="container bg-gray-900 bg-opacity-80 backdrop-blur-md rounded-3xl shadow-2xl p-8 w-full max-w-md border border-gray-700">
+    <div class="flex flex-col sm:flex-row items-center justify-center mb-6 text-center sm:text-left">
+      <img src="https://cdn-icons-png.flaticon.com/512/1041/1041373.png" class="w-7 h-7 sm:mr-3 mx-auto sm:mx-0 mb-2 sm:mb-0" alt="globe icon">
+      <h1 class="text-3xl font-extrabold tracking-wide">Vetrina Community</h1>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <a href="https://t.me/Tralalero4" target="_blank" class="link-card flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-500">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="Telegram" class="w-8 h-8">
+        <div>
+          <p class="font-semibold text-lg">Telegram (profilo)</p>
+          <p class="text-sm opacity-80">@Tralalero4</p>
+        </div>
+      </a>
+
+      <a href="https://t.me/Pallina_gigante_bot" target="_blank" class="link-card flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-green-600 to-green-500">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="Telegram bot" class="w-8 h-8">
+        <div>
+          <p class="font-semibold text-lg">Telegram (bot)</p>
+          <p class="text-sm opacity-80">@Pallina_gigante_bot</p>
+        </div>
+      </a>
+
+      <a href="https://signal.me/#eu/tYO6BfEOh-X1_wPJVfk9G2F6WRBn3-k66Sy-WFVtK4_E0JON08ZL0Jn20QVbafL_" target="_blank" class="link-card flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-indigo-700 to-indigo-500">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/signal.svg" alt="Signal" class="w-8 h-8 bg-white rounded-full p-1">
+        <div>
+          <p class="font-semibold text-lg">Signal</p>
+          <p class="text-sm opacity-80">Profilo privato</p>
+        </div>
+      </a>
+
+      <a href="https://smp12.simplex.im/a#iINU1LzFVBYPU37gFgKtYtmMedjQZ-75qwmB83lNkQc" target="_blank" class="link-card flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-pink-600 to-rose-500">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/simplex.svg" alt="Simplex" class="w-8 h-8 bg-white rounded-full p-1">
+        <div>
+          <p class="font-semibold text-lg">Simplex</p>
+          <p class="text-sm opacity-80">Chat sicura</p>
+        </div>
+      </a>
+
+      <a href="https://threema.id/2J3447ZE" target="_blank" class="link-card flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-gray-700 to-gray-600">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/threema.svg" alt="Threema" class="w-8 h-8 bg-white rounded-full p-1">
+        <div>
+          <p class="font-semibold text-lg">Threema</p>
+          <p class="text-sm opacity-80">2J3447ZE</p>
+        </div>
+      </a>
+
+      <a href="https://matrix.to/#/@gpurum:matrix.org" target="_blank" class="link-card flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-purple-700 to-purple-600">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/matrix.svg" alt="Matrix" class="w-8 h-8 bg-white rounded-full p-1">
+        <div>
+          <p class="font-semibold text-lg">Matrix</p>
+          <p class="text-sm opacity-80">@gpurum:matrix.org</p>
+        </div>
+      </a>
+    </div>
+
+    <footer class="text-xs text-gray-400 mt-8 border-t border-gray-700 pt-4 text-center">
+      Made with ❤️ by la community
+    </footer>
+  </div>
+</body>
+</html>
